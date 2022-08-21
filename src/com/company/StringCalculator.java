@@ -21,11 +21,10 @@ public class StringCalculator
     }
 
 
-    //Splitter method will split the given string by comma into a array of string
+    //Splitter method will split the given string by comma and space(\n)
     private static String[] splitter(String str)
     {
-
-        String strArr[] = str.split(",");
+        String strArr[] = str.split(",|\n");
         return strArr;
     }
 

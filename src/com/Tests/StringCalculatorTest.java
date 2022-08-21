@@ -59,10 +59,16 @@ public class StringCalculatorTest
     //Task 6:-
     //Ignore number greater than 1000
     @Test
-    public void shouldNotConsiderGreaterThan1000()
+    public void shouldNotConsiderNumberGreaterThan1000()
     {
         assertEquals(2, StringCalculator.add("2,1001"));
     }
 
-
+    //Task 7
+    //Support newline (\n) as separator alongside comma (,)
+    @Test
+    public void returnSummationOfNextLineSeparatedInput()
+    {
+        assertEquals(12,StringCalculator.add("3,2\n1,6"));
+    }
 }
