@@ -12,4 +12,6 @@ This is a repo of String Calculator java Program
     Added .idea file to ignore by specifing in .gitignore file
 
 
-
+#2nd Commit:-
+    Task 1:-
+    Added Simple String Calculator with its test cased
