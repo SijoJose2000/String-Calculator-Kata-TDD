@@ -36,3 +36,7 @@ Changes in code is made to ignore numbers greater than 1000 and not to consider 
 #6th Commit:-
 Task 7:- 
 Added support for newline (\n) as a separator alongside comma.
+
+#7th Commit:-
+Task 8:- 
+Added support for custom delimiter as separator

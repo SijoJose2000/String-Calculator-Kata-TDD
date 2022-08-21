@@ -21,10 +21,19 @@ public class StringCalculator
     }
 
 
-    //Splitter method will split the given string by comma and space(\n)
+    //Splitter method will split the given string by comma and space(\n) also with custom delimiter
     private static String[] splitter(String str)
     {
-        String strArr[] = str.split(",|\n");
+        char delimiter = ',';
+
+
+        if(str.startsWith("//"))
+        {
+            delimiter = str.charAt(2);
+            str = str.replace("//"+ delimiter + "\n", "");
+        }
+
+        String strArr[] = str.split(delimiter + "|\n");
         return strArr;
     }
 

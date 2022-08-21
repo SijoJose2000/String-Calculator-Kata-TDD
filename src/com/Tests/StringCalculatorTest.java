@@ -71,4 +71,12 @@ public class StringCalculatorTest
     {
         assertEquals(12,StringCalculator.add("3,2\n1,6"));
     }
+
+    //Task 8
+    //Supports Custom separators
+    @Test
+    public void returnSummationOfCustomDelimiterSeparatedInput()
+    {
+        assertEquals(12,StringCalculator.add("//;\n3;2;1;6"));
+    }
 }
