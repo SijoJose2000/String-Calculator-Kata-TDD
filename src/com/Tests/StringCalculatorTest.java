@@ -24,11 +24,20 @@ public class StringCalculatorTest
         assertEquals(5, StringCalculator.add("5"));
     }
 
+    //Task 2:
     //If a string of comma separated value is passed, summation of those value should be returned
     @Test
     public void returnSummationOfCommaSeparatedInput()
     {
         assertEquals(12,StringCalculator.add("3,2,1,6"));
+    }
+
+    //Task 3:
+    //Allowing Alphabets to be included
+    @Test
+    public void supportsSummationOfLowerCaseAlphabets()
+    {
+        assertEquals(3, StringCalculator.add("1,b"));
     }
 
 }

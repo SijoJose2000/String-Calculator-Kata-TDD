@@ -14,4 +14,9 @@ This is a repo of String Calculator java Program
 
 #2nd Commit:-
     Task 1:-
-    Added Simple String Calculator with its test cased
+    Added Simple String Calculator with its test case
+
+
+#3rd Commit:-
+    Task 3:-
+    Added support for lowercase alphabets in String Calculator and its test case
