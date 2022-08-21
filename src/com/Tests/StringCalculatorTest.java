@@ -43,7 +43,7 @@ public class StringCalculatorTest
     //Task 4 & 5
     //String Calculator should throw error when negative number is encountered
     @Test
-    public void throwErrorIfNegative()
+    public void throwErrorIfNegativeNumberEncountered()
     {
         try
         {
@@ -55,5 +55,14 @@ public class StringCalculatorTest
 
         }
     }
+
+    //Task 6:-
+    //Ignore number greater than 1000
+    @Test
+    public void shouldNotConsiderGreaterThan1000()
+    {
+        assertEquals(2, StringCalculator.add("2,1001"));
+    }
+
 
 }

@@ -20,6 +20,7 @@ public class StringCalculator
         return summation(strArr);
     }
 
+
     //Splitter method will split the given string by comma into a array of string
     private static String[] splitter(String str)
     {
@@ -35,6 +36,7 @@ public class StringCalculator
         int val = s.compareTo("a") + 1;
         return val;
     }
+
 
     //Will confirm if a given element is a lowercase alphabet
     private static boolean isSmallAlpha(String s)
@@ -58,12 +60,18 @@ public class StringCalculator
             if (isSmallAlpha(s))
             {
                 int val = getAlphaValue(s);
+
                 tot += val;
             }
             else
             {
                 int item = Integer.parseInt(s);
-                tot += item;
+
+                //This condition will take care of ignoring the number greater than thousand
+                if (item <= 1000)
+                {
+                    tot += item;
+                }
             }
         }
         return tot;

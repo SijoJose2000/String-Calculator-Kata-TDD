@@ -25,4 +25,8 @@ This is a repo of String Calculator java Program
     Task 4 & 5:-
     The code will throw error if negative number is encountered.
     The code will throw error with the list of all the negative numbers that will be encountered
+
+#5th Commit:-
+    Task 6:-
+    Changes in code is made to ignore numbers greater than 1000 and not to consider those number during summation.
     
