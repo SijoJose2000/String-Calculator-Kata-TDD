@@ -40,4 +40,20 @@ public class StringCalculatorTest
         assertEquals(3, StringCalculator.add("1,b"));
     }
 
+    //Task 4 & 5
+    //String Calculator should throw error when negative number is encountered
+    @Test
+    public void throwErrorIfNegative()
+    {
+        try
+        {
+            StringCalculator.add("1,-3,5,-2,-6");
+            fail("Exception Excepted");
+        }
+        catch(Exception e)
+        {
+
+        }
+    }
+
 }

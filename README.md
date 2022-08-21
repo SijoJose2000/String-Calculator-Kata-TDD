@@ -20,3 +20,9 @@ This is a repo of String Calculator java Program
 #3rd Commit:-
     Task 3:-
     Added support for lowercase alphabets in String Calculator and its test case
+
+#4th Commit:-
+    Task 4 & 5:-
+    The code will throw error if negative number is encountered.
+    The code will throw error with the list of all the negative numbers that will be encountered
+    

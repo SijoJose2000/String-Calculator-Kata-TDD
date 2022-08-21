@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.ArrayList;
+
 public class StringCalculator
 {
 
@@ -13,6 +15,8 @@ public class StringCalculator
 
         String strArr[] = splitter(str);
 
+
+        throwExceptionIfNegative(strArr);
         return summation(strArr);
     }
 
@@ -65,6 +69,33 @@ public class StringCalculator
         return tot;
     }
 
+
+    /*
+    Will throw exception if negative number is encountered and will also pass the list of
+    Negative number encountered. To protect the proper flow of the program. Negative number should be checked
+    right after splitting
+    */
+
+    private static void throwExceptionIfNegative(String[] strArr)
+    {
+        ArrayList<String> list = new ArrayList<>();
+        for(String s : strArr)
+        {
+            if(!isSmallAlpha(s))
+            {
+                int item = Integer.parseInt(s);
+                if(item < 0)
+                {
+                    list.add(s);
+                }
+            }
+        }
+
+        if(!list.isEmpty())
+        {
+            throw new RuntimeException("Negative numbers are not allowed " + String.join(", ", list));
+        }
+    }
 
 
 }
